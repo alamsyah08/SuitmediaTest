@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         val nama = etNama.text.toString()
         if(nama.isNotEmpty()){
             val intent = Intent(this, SecondScreenActivity::class.java)
-            intent.putExtra("USERNAME", etNama.toString())
+            intent.putExtra("USERNAME", nama.toString())
             startActivity(intent)
         }
 
