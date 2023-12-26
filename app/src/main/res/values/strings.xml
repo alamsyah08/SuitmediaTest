@@ -10,5 +10,8 @@
     <string name="selectUsername">Selected User Name</string>
     <string name="chooseUser">Choose a User</string>
     <string name="btnBack">Button Kembali</string>
+    <string name="third_screen">Third Screen</string>
+    <string name="img_user">img user</string>
+    <string name="email">email@gmail.com</string>
 
 </resources>

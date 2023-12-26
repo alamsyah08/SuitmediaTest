@@ -1,17 +1,12 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
     <style name="Base.Theme.SuitmediaTest" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:textViewStyle">@style/PoppinsFont</item>
         <item name="android:buttonStyle">@style/PoppinsFont</item>
-
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
-
-    <style name="PoppinsFont">
-        <item name="android:fontFamily">@font/poppins_regular</item>
-    </style>
-
-
-    <style name="Theme.SuitmediaTest" parent="Base.Theme.SuitmediaTest" />
 </resources>

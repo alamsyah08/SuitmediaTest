@@ -12,9 +12,14 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var etNama : EditText
     private lateinit var etPalindrome : EditText
+
+    private lateinit var sessionManager: SharePreference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        sessionManager = SharePreference(this)
 
         etNama = findViewById(R.id.etName)
         etPalindrome = findViewById(R.id.etPalindrome)
@@ -37,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         val nama = etNama.text.toString()
         if(nama.isNotEmpty()){
             val intent = Intent(this, SecondScreenActivity::class.java)
-            intent.putExtra("USERNAME", nama.toString())
+            sessionManager.saveUsername(nama)
             startActivity(intent)
         }
 
